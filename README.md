@@ -20,13 +20,23 @@ Comportamentos esperados:
 ## 
 
 ### IDE Utilizada 
-    - VSCODE: Editor de codigo-fonte desenvolvido pela Microsoft
+- VSCODE: Editor de codigo-fonte desenvolvido pela Microsoft
+
+## Interfaces
+
+Para a criação desse App, foram criados 3 interfaces que posteriormente na classe Iphone foram implementadas. Essas interfaces são:
+
+- AparelhoTelefonico.java
+- NavegadorInternet.java
+- ReprodutorMusical.java
+
 
 ## Diagrama UML do Projeto
 
 Abaixo se encontra a modelagem que foi utilizada para a criação do APP Iphone. Esse diagrama foi criado na ferramenta [draw.io](draw.io).
 
 <img src="assets/img/Diagrama Iphone.drawio.png">
+
 
 ## Exemplo de Aplicaçao
 
@@ -61,3 +71,6 @@ public class App {
 #### Resultado:
 
 <img src="assets/img/iphoneResultado.png">
+
+##
+<div align="center"> Feito por <a href="https://github.com/felipertec">Felipe 🧑‍💻</a>
