@@ -1,18 +1,63 @@
-## Getting Started
+# DIO - Trilha Java Básico
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### POO - Desafio
 
-## Folder Structure
+Modelagem e diagramação da representação em UML e Código no que se refere ao componente iPhone.
 
-The workspace contains two folders by default, where:
+Com base no vídeo de lançamento do iPhone conforme link abaixo, elabore em uma ferramenta de UML de sua preferência a diagramação das classes e interfaces com a proposta de representar os papéis do iPhone de: Reprodutor Musicial, Aparelho Telefônico e Navegador na Internet. Em seguida crie as classes e interfaces no formato de arquivos .java
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Lançamento iPhone 2007
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    Minutos relevantes do 00:15 até 00:55
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Comportamentos esperados:
 
-## Dependency Management
+    Repodutor Musicial: tocar, pausar, selecionarMusica
+    Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz
+    Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## 
+
+### IDE Utilizada 
+    - VSCODE: Editor de codigo-fonte desenvolvido pela Microsoft
+
+## Diagrama UML do Projeto
+
+Abaixo se encontra a modelagem que foi utilizada para a criação do APP Iphone. Esse diagrama foi criado na ferramenta [draw.io](draw.io).
+
+<img src="assets/img/Diagrama Iphone.drawio.png">
+
+## Exemplo de Aplicaçao
+
+Segue o codigo fonte abaixo de um teste da aplicação e seu resultado:
+
+````
+public class App {
+    public static void main(String[] args) throws Exception {
+        Iphone iphone = new Iphone();
+        System.out.println("========================  Iphone Reproduzindo musicas =====================");
+        iphone.selecionarMusica("Mais uma vez - Legião Urbana"); //Só adicionar o nome da musica no parametro.
+        iphone.tocar();
+        iphone.pausar();
+        System.out.println("===========================================================================");
+
+        System.out.println("========================  Iphone Reproduzindo Ligacao =====================");
+        iphone.ligar(40028922); // inserir numeros para realizar a ligação, porem nao pode ser do tipo texto, nesse casso inserir sem as "".
+        iphone.atender();
+        iphone.iniciarCorreio("Bom Dia esse é um teste  de  voz enviado pelo meu iphone."); // inserir a mensagem de texto simulando audio.
+        System.out.println("===========================================================================");
+        
+        System.out.println("========================  Iphone Simulando Navegador =====================");
+        iphone.exibirPagina("www.dio.me"); // Inserir um site para aparecer na aplicação.
+        iphone.adicionarAba();
+        iphone.atualizarPagina();
+        System.out.println("===========================================================================");
+
+    }
+}
+````
+
+#### Resultado:
+
+<img src="assets/img/iphoneResultado.png">
